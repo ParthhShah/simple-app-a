@@ -1,7 +1,7 @@
 const express = require('express')
 const bodyParser = require('body-parser')
 const mongoose = require('mongoose')
-
+require('dotenv').config
 const port = process.env.PORT || 8000
 
 const app = express()
@@ -25,7 +25,7 @@ mongoose
 const profile = require('./route/api/profile')
 
 app.get('/', (req, res) => {
-    res.send('Project is Running')
+    res.send("<h1>"+process.env.CYCLIC_URL +"</h1>")
 })
 
 // actual routes

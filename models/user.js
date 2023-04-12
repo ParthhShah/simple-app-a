@@ -1,5 +1,5 @@
 const mongoose = require('mongoose')
-const { use } = require('../../../route/api/profile')
+
 const Schema = mongoose.Schema
 
 const Userschema = new Schema({
